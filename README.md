@@ -48,30 +48,30 @@ relational database design, and machine learning.
 From the backend directory:
 
 1. Create a virtual environment:
-
-   py -m venv .venv
-
+```
+py -m venv .venv
+```
 2. Activate the environment:
-
-   .\.venv\Scripts\Activate.ps1
-
+```
+.\.venv\Scripts\Activate.ps1
+```
 3. Install dependencies:
-
-   python -m pip install -r requirements.txt
-
+```
+python -m pip install -r requirements.txt
+```
 4. Start the API:
-
-   python -m uvicorn app.main:app --reload
-
+```
+python -m uvicorn app.main:app --reload
+```
 API documentation:
 http://127.0.0.1:8000/docs
 
 ## Running Tests
 
 From the backend directory:
-
+```
     python -m pytest -v
-
+```
 ## Development Roadmap
 
 - [x] Phase 1: Backend Foundations

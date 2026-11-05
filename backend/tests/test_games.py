@@ -16,6 +16,7 @@ def test_valid_game(game_id, expected_home, expected_away):
     response = client.get(f"/api/games/{game_id}")
 
     assert response.status_code == 200
+    assert response.json()["game_id"] == game_id
     assert response.json()["home_team"] == expected_home
     assert response.json()["away_team"] == expected_away
 
